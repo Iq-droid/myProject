@@ -1,0 +1,64 @@
+{
+  "house": [
+    {
+      "id": 1,
+      "image": "https://bit.ly/2xDgnKp",
+      "type_house": "Bungalow",
+      "price": 50000
+    },
+    {
+      "image": "https://bit.ly/2xDgnKp",
+      "type_house": "Bungalow",
+      "price": "50000",
+      "id": 2
+    },
+    {
+      "image": "https://bit.ly/2xDgnKp",
+      "type_house": "Bungalow",
+      "price": "50000",
+      "id": 3
+    },
+    {
+      "image": "https://bit.ly/2xDgnKp",
+      "type_house": "Bungalow",
+      "price": "50000",
+      "id": 4
+    },
+    {
+      "image": "https://bit.ly/2xDgnKp",
+      "type_house": "Bungalow",
+      "price": "50000",
+      "id": 5
+    },
+    {
+      "image": "https://bit.ly/2xDgnKp",
+      "type_house": "Bungalow",
+      "price": "50000",
+      "id": 6
+    },
+    {
+      "image": "https://bit.ly/2xDgnKp",
+      "type_house": "Bungalow",
+      "price": "50000",
+      "id": 7
+    },
+    {
+      "image": "https://bit.ly/2xDgnKp",
+      "type_house": "Bungalow",
+      "price": "50000",
+      "id": 8
+    },
+    {
+      "image": "https://bit.ly/3Kg39I9",
+      "type_house": "Townhouse",
+      "price": "50000",
+      "id": 9
+    },
+    {
+      "image": "https://bit.ly/43cAUTu",
+      "type_house": "Mansion",
+      "price": "50000",
+      "id": 10
+    }
+  ]
+}
