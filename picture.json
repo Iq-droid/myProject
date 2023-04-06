@@ -4,12 +4,12 @@
       "id": 1,
       "image": "https://bit.ly/2xDgnKp",
       "type_house": "Bungalow",
-      "price": 50000
+      "price": "$50000"
     },
     {
       "image": "https://bit.ly/2xDgnKp",
       "type_house": "Bungalow",
-      "price": "50000",
+      "price": "$150000",
       "id": 2
     },
     {
