@@ -4,62 +4,62 @@
         "id":1,
         "image":"https://bit.ly/2xDgnKp",
         "type_house":"Bungalow",
-        "price":"$50000",
+        "price":"$50,000",
         "available_houses":10
     },
     {
         "id":2,
         "image":"https://bit.ly/3KCDkU4",
         "type_house":"Single_Family Home",
-        "price":"$58000"
+        "price":"$58,000"
     },
     {
         "id":3,
         "image":"https://bit.ly/3Kg39I9",
         "type_house":"Townhouse",
-        "price":"$86000"
+        "price":"$86,000"
     },
     {
         "id":4,
         "image":"https://bit.ly/3GhCtFW",
         "type_house":"Multi_Family Home",
-        "price":"$150000"
+        "price":"$150,000"
     },
     {
         "id":5,
         "image":"https://bit.ly/3GhCJEU",
         "type_house":"Modular Home",
-        "price":"$55000"
+        "price":"$55,000"
     },
     {
         "id":6,
         "image":"https://bit.ly/43dFOj9",
         "type_house":"Cottage",
-        "price":"$60000"
+        "price":"$60,000"
     },
     {
         "id":7,
         "image":"https://bit.ly/40JbqeB",
         "type_house":"Apartment",
-        "price":"$9000000"
+        "price":"$9,000,000"
     },
     {
         "id":8,
         "image":"https://bit.ly/3GllguZ",
         "type_house":"Modern Farmhouse",
-        "price":"$70000"
+        "price":"$70,000"
     },
     {
         "id":9,
         "image":"https://bit.ly/4385w8D",
         "type_house":"Villa",
-        "price":"$90000"
+        "price":"$90,000"
     },
     {
         "id":10,
         "image":"https://bit.ly/43cAUTu",
         "type_house":"Mansion",
-        "price":"$800000"
+        "price":"$800,000"
     }
 ]
 }

@@ -59,6 +59,18 @@
       "type_house": "Mansion",
       "price": "50000",
       "id": 10
+    },
+    {
+      "image": "https://bit.ly/2xDgnKp",
+      "type_house": "Bungalow",
+      "price": "$50,000",
+      "id": 11
+    },
+    {
+      "image": "https://bit.ly/2xDgnKp",
+      "type_house": "Bungalow",
+      "price": "$50,000",
+      "id": 12
     }
   ]
 }
