@@ -2,34 +2,42 @@
 body {
   box-sizing: border-box;
   width: 1920px;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: 0 auto;
+  font-family: sans-serif;
   overflow-x: hidden;
+  background: wheat;
 }
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
-    display: flex;
-    justify-content: space-between;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 3rem;
+   place-items: center;
     align-items: center;
     z-index: 99;
     background: #704214;
   }
   
   .logo {
-    font-size: 2em;
+    font-size: 1.5rem;
     color: #fff;
     user-select: none;
   }
   
   .navigation a {
     position: relative;
-    font-size: 1.1em;
+    font-size: 1rem;
     color: white;
     text-decoration: none;
     font-weight: 500;
     margin-left: 40px;
+    width: 100%;
   }
   
   .navigation a::after {
@@ -53,285 +61,51 @@ header {
     background: #996515;
   }
   
-  /* the login popup button */
-  .navigation .btnlogin-popup {
-    width: 130px;
-    height: 50px;
-    background: #996515;
-    border: 2px solid #fff;
-    outline: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 1.1em;
-    color: #fff;
-    font-weight: 500;
-    margin-left: 40px;
-    transition: 0s;
-  }
-  
-  .navigation .btnlogin-popup:hover {
-    background: #fff;
-    color: #162938;
-  }
-  
-    body {font-family: Arial, Helvetica, sans-serif;}
-  * {box-sizing: border-box;}
-  
-  /* Button used to open the contact form - fixed at the bottom of the page */
-  .open-button {
-    background-color: #555;
-    color: white;
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    opacity: 0.9;
-    position: fixed;
-    bottom: 23px;
-    right: 28px;
-    width: 280px;
-  }
-  
-  /* The popup form - hidden by default */
-  .form-popup {
-    display: none;
-    position: fixed;
-    top: 0;
-    right: 15px;
-    border: 3px solid #321010;
-    z-index: 9;
-  }
-  
-  /* Add styles to the form container */
-  .form-container {
-    max-width: 300px;
-    padding: 10px;
-    background-color: rgb(55, 20, 20);
-  }
-  
-  /* Full-width input fields */
-  .form-container input[type=text], .form-container input[type=password] {
-    width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    border: none;
-    background: #f6e607;
-  }
-  
-  /* When the inputs get focus, do something */
-  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
-    background-color: #e7e015;
-    outline: none;
-  }
-  
-  /* Set a style for the submit/login button */
-  .form-container .btn {
-    background-color: #aa4604;
-    color: rgb(26, 7, 7);
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    margin-bottom:10px;
-    opacity: 0.8;
-  }
-  
-  /* Add a red background color to the cancel button */
-  .form-container .cancel {
-    background-color: red;
-  }
-  
-  /* Add some hover effects to buttons */
-  .form-container .btn:hover, .open-button:hover {
-    opacity: 1;
-  }
-    
-     /* Add a color to the active/current link  */
-     .topnav a.active { 
-       background-color: #3D251E; 
-       color: white; 
-     } 
-   .topnav {
-    box-sizing: border-box; 
-  }
-
-
-/* photo card container */
   .photo-card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    margin-top: 10rem;
-   }
-   
-   .column {
-    width: 30rem;
-    padding: 0 1rem;
-
-   }
-   
-   .photo-card {
-    position: relative;
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    transition: all 0.3s ease;
-   }
-   
-   .photo-card:hover {
-    outline: 3px solid red;
-   }
-   
-   .photo-card img {
-    max-width: 100%;
-   }
-   
-   .photo-card h3 {
-    margin-top: 10px;
-   }
-   
-   .photo-card p.price {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-weight: bold;
-   }
-   
-   .popup-form {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.4);
-   }
-   
-   .popup-form-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 50%;
-   }
-   
-   .popup-form input[type=text], .popup-form input[type=email] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-   }
-   
-   .popup-form button[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-   }
-   
-   .popup-form button[type=submit]:hover {
-    background-color: #45a049;
-   }
-
-   .photo-card-container {
-    width: 80%;
-    margin-left: 10%;
-   }
-
-   body {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  h1 {
-    text-align: center;
-    color: #0066cc;
-  }
-  
-  form {
-    max-width: 500px;
-    margin: 0 auto;
-  }
-  
-  form div {
-    margin-bottom: 10px;
-  }
-  
-  label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  input[type="number"],
-  textarea {
-    border: 2px solid #0066cc;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 16px;
-    width: 100%;
-  }
-  
-  select {
-    border: 2px solid #0066cc;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 16px;
-    width: 100%;
-    background-color: #fff;
-    color: #000;
-  }
-  
-  input[type="submit"] {
-    background-color: #0066cc;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: #44c767;
-  }
-  
-  #errorMsg {
-    color: red;
+    gap: .5rem;
+    width: 70%;
+    margin-left: 20%;
+   margin-top: 6%;
+    place-items: center;
   }
 
-  .display-houses{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.5rem;
-  }
-  .card-img img {
-    height: 25rem;
-    width: 100%;
-  }
   .house-card {
+    width: 25rem;
+    height: 25rem;
     border: 2px solid black;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: .7rem .7rem gray;
+    margin-top: 1rem;
+    transition: smooth 400ms ease;
+    margin-left: 5rem;
   }
   .house-card:hover {
-    margin-top: -0.5rem;
-    border: 2px solid orangered;
+    margin-top: -.5rem;
+    box-shadow: .7rem .7rem #996515;
   }
+
+  .card-img img {
+    width: 100%;
+    height: 19rem;
+  }
+
   .card-content {
-    margin-top: 1rem;
-    border-top: 1px solid black;
-    border-top-left-radius: 0.3rem;
-    border-top-right-radius: 0.3rem;
     display: flex;
     flex-direction: column;
     text-align: center;
   }
+
+  .card-content h2 {
+    font-size: 1.1rem;
+  }
+
+  .card-content h3 {
+    font-size: .9rem;
+  }
+  
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -340,8 +114,43 @@ header {
     margin-left: 10%;
     margin-top: 5rem;
   }
-  .form input {
+  #form {
+    width: 70%;
+    margin-left: 20%;
+    padding: 3rem;
+    display: grid;
+    place-items: center;
+  }
+  .form {
+    width: 60%;
+  }
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: .5rem;
+  }
+  .form-group input, textarea, select {
     width: 100%;
+    border: 2px solid black;
+    border-radius: 1rem;
+  }
+  .form-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  .form-button button {
+    background: #704214;
+    padding: .2rem;
+    border-radius: .5rem;
+    font-weight: bold;
+    color: white;
+    transition: smooth 400ms ease;
+  }
+  .form-button button:hover {
+    background: gold;
+    color: black;
+    box-shadow: .5rem .5rem black;
   }
   .socials svg {
     color: black;

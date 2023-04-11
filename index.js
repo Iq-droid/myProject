@@ -10,7 +10,7 @@ function iterateHouses(houses){
     houses.forEach(houseList)
 }
 function houseList(houses){
-    const dispHouse = document.querySelector(".display-houses")
+    const dispHouse = document.querySelector(".photo-card-container")
     const div = document.createElement("div")
     div.innerHTML = `
     <article class = "house-card">
@@ -70,59 +70,59 @@ const form = document.querySelector(".form").addEventListener("submit", (e)=> {
     .then(data => console.log(data))
   });
 
-  const searchInput = document.getElementById('search-bar');
-const searchResults = document.getElementById('search-results');
-const houseDetails = document.getElementById('house-details');
+//   const searchInput = document.getElementById('search-bar');
+// const searchResults = document.getElementById('search-results');
+// const houseDetails = document.getElementById('house-details');
 
-searchInput.addEventListener('input', function() {
-  const searchQuery = this.value;
+// searchInput.addEventListener('input', function() {
+//   const searchQuery = this.value;
 
-  fetch(`houses.json`)
-    .then(response => response.json())
-    .then(data => {
-      let results = '';
+//   fetch(`houses.json`)
+//     .then(response => response.json())
+//     .then(data => {
+//       let results = '';
 
-      data.forEach(house => {
-        if (house.type.toLowerCase().includes(searchQuery.toLowerCase())) {
-          results += `<div class="house" data-name="${house.name}" data-type="${house.type}" data-location="${house.location}" data-images="${house.images}" data-price="${house.price}">
-                        <h2>${house.name}</h2>
-                        <p>Type: ${house.type}</p>
-                        <p>Location: ${house.location}</p>
-                      </div>`;
-        }
-      });
+//       data.forEach(house => {
+//         if (house.type.toLowerCase().includes(searchQuery.toLowerCase())) {
+//           results += `<div class="house" data-name="${house.name}" data-type="${house.type}" data-location="${house.location}" data-images="${house.images}" data-price="${house.price}">
+//                         <h2>${house.name}</h2>
+//                         <p>Type: ${house.type}</p>
+//                         <p>Location: ${house.location}</p>
+//                       </div>`;
+//         }
+//       });
 
-      searchResults.innerHTML = results;
-      houseDetails.innerHTML = '';
-    });
-});
+//       searchResults.innerHTML = results;
+//       houseDetails.innerHTML = '';
+//     });
+// });
 
-searchResults.addEventListener('click', function(event) {
-  const selectedHouse = event.target.closest('.house');
+// searchResults.addEventListener('click', function(event) {
+//   const selectedHouse = event.target.closest('.house');
 
-  if (selectedHouse) {
-    const name = selectedHouse.getAttribute('data-name');
-    const type = selectedHouse.getAttribute('data-type');
-    const location = selectedHouse.getAttribute('data-location');
-    const images = selectedHouse.getAttribute('data-images').split(',');
-    const price = selectedHouse.getAttribute('data-price');
+//   if (selectedHouse) {
+//     const name = selectedHouse.getAttribute('data-name');
+//     const type = selectedHouse.getAttribute('data-type');
+//     const location = selectedHouse.getAttribute('data-location');
+//     const images = selectedHouse.getAttribute('data-images').split(',');
+//     const price = selectedHouse.getAttribute('data-price');
 
-    let imageHTML = '';
-    images.forEach(image => {
-      imageHTML += `<img src="${image}" alt="${name}" class="house-image">`;
-    });
+//     let imageHTML = '';
+//     images.forEach(image => {
+//       imageHTML += `<img src="${image}" alt="${name}" class="house-image">`;
+//     });
 
-    houseDetails.innerHTML = `<div>
-                                 ${imageHTML}
-                               </div>
-                               <div>
-                                 <p>Name: ${name}</p>
-                                 <p>Type: ${type}</p>
-                                 <p>Location: ${location}</p>
-                                 <p>Price: ${price}</p>
-                               </div>`;
-  }
-});
+//     houseDetails.innerHTML = `<div>
+//                                  ${imageHTML}
+//                                </div>
+//                                <div>
+//                                  <p>Name: ${name}</p>
+//                                  <p>Type: ${type}</p>
+//                                  <p>Location: ${location}</p>
+//                                  <p>Price: ${price}</p>
+//                                </div>`;
+//   }
+// });
 
 
 
