@@ -9,161 +9,185 @@
     <link href='https://unpkg.com/boxicons@2.1.4/dist/boxicons.js' rel='stylesheet'>
 </head>
 <body>
-    <div class="topnav">
-        <a class="active" href="#home">Home</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About us</a>
-        <input type="text" placeholder="Search..">
-        
-            <form>
-             <h2>Login</h2>
-             <label>Username</label>
-             <input type="text" placeholder="Enter Username">
-             <label>Email</label>
-             <input type="text" placeholder="Enter Email">
-             <label>Phone number</label>
-             <input type="text" placeholder="Enter number">
-             <label>Password</label>
-             <input type="password" placeholder="Enter Password">
-             <button type="submit">Login</button>
-            </form>
-            <button class="close-btn">Close</button>
-           </div>
-          </div>
-   <div class="content">
-      </div>
-      <div id="about">
-
-      </div>
-     
-     <div class="display-houses">
-
-     </div>
-
-
-
-        <h1>About us</h1>
-        <p>
-            Welcome to our revolutionary web app that connects architects and their clients to create stunning customised modern homes. We are passionate about bringing together skilled architects who have a vision for innovative designs with clients who want to experience the beauty of a unique home that truly reflects their personality.
-        </p>
-        <p>
-            Our app is designed to simplify the process of building a dream house from start to finish. With our user-friendly platform, clients can easily browse through a large pool of experienced architects, view their past work and get in touch with them to discuss the project. Our app also provides a simple and effective way for architects to showcase their creativeness and unique style.
-        </p>
-        <p>
-            We believe that every home should be a reflection of its owners and that's why we're committed to helping people bring their ideas to life. Whether you're looking for a sleek and modern house or something more traditional with a contemporary twist, our platform can help you find the perfect architect to make your dreams a reality.
-        </p>
-        <p>
-            Our team is dedicated to making the process of building a customised modern home as smooth and stress-free as possible. We strive to provide exceptional customer service and support throughout the entire process, ensuring that our clients are always satisfied with the end result.
-        </p>
-        <p>
-            Thank you for choosing our web app to help you build your dream home. We look forward to working with you and helping you create a stunning modern house that you'll love for years to come.
-        </p>
-     </div>
-
-     <div id="form">
-   <form action="" class="form">
-    <div class="form-group">
-        <label for="">Name</label>
-        <input id="name" type="text" name="name" placeholder="Enter your full name">
-    </div>
-    <div class="form-group">
-        <label for="">Email</label>
-        <input id="email" type="text" name="Email" placeholder="Enter your current Email">
-    </div>
-    <div class="form-group">
-        <label for="">Phone number</label>
-        <input id="phone-number" type="text" name="phone-number" placeholder="Enter your phone number">
-    </div>
-    <div class="form-group">
-        <label for="">Type of house</label>
-        <select name="" id="house">
-            <option value=""></option>
-            <option value="">Single-Family Home</option>
-            <option value="">Townhouse</option>
-            <option value="">Multi-Family Home</option>
-            <option value="">Modular Home</option>
-            <option value="">Bungalow</option>
-            <option value="">Cottage</option>
-            <option value="">Mordern Farmhouse</option>
-            <option value="">Apartment</option>
-            <option value="">Mansion</option>
-            <option value="">Villa</option>
-        </select>
-    </div>
-    <div class="form-group">
-        <label for="">Number of rooms</label>
-        <select name="" id="rooms">
-            <option value=""></option>
-            <option value="1">1 Bedroom</option>
-            <option value="2">2 Bedroom</option>
-            <option value="3">3 Bedroom</option>
-            <option value="4">4 Bedroom</option>
-            <option value="5">5 Bedroom</option>
-        </select>
-    </div>
-    <div class="form-group">
-        <label for="">Enter budget</label>
-        <input id="budget" type="number" name="budget" placeholder="Enter your estimated budget">
-    </div>
-    <div class="form-group">
-        <label for="">Enter current date</label>
-        <input id="date" type="date" name="date" placeholder="Enter current date">
-    </div>
-    <div class="form-group">
-        <label for="">Enter house description</label>
-       <textarea name="" id="description" cols="30" rows="10" placeholder="Enter house description"></textarea>
-    </div>
-    <div class="form-button">
-        <button id="btn" type="submit">Book a house design</button>
-    </div>
     <div>
-        <!-- Add icon library -->
+        <header>
+            <h2 class="logo">Logo</h2>
+            <nav class="navigation">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+                <button class="btnlogin-popup">Login</button>
+            </nav>
+        </header>
+    </div>
+    <div class="photo-card-container">
+        <div class="column">
+         <div class="photo-card" id="single-family-house">
+          <img src="https://bit.ly/3KCDkU4">
+          <h3>Single-family house</h3>
+          <p class="price">$250,000</p>
+         </div>
+      
+         <div class="photo-card" id="townhouse">
+          <img src="https://bit.ly/3Kg39I9">
+          <h3>Townhouse</h3>
+          <p class="price">$150,000</p>
+         </div>
+      
+         <div class="photo-card" id="multi-family-home">
+          <img src="https://bit.ly/3GhCtFW">
+          <h3>Multi-Family Home</h3>
+          <p class="price">$350,000</p>
+         </div>
+      
+         <div class="photo-card" id="modular-home">
+          <img src="https://bit.ly/3GhCJEU">
+          <h3>Modular Home</h3>
+          <p class="price">$200,000</p>
+         </div>
+        </div>
+      
+        <div class="column">
+         <div class="photo-card" id="bungalow">
+          <img src="https://bit.ly/2xDgnKp">
+          <h3>Bungalow</h3>
+          <p class="price">$180,000</p>
+         </div>
+      
+         <div class="photo-card" id="cottage">
+          <img src="https://bit.ly/43dFOj9">
+          <h3>Cottage</h3>
+          <p class="price">$160,000</p>
+         </div>
+      
+         <div class="photo-card" id="modern-farmhouse">
+          <img src="https://bit.ly/3GllguZ">
+          <h3>Modern Farmhouse</h3>
+          <p class="price">$300,000</p>
+         </div>
+      
+         <div class="photo-card" id="apartment">
+          <img src="https://bit.ly/40JbqeB">
+          <h3>Apartment</h3>
+          <p class="price">$100,000</p>
+         </div>
+        </div>
+      
+        <div class="column">
+         <div class="photo-card" id="mansion">
+          <img src="https://bit.ly/43cAUTu">
+          <h3>Mansion</h3>
+          <p class="price">$1,000,000</p>
+         </div>
+      
+         <div class="photo-card" id="villa">
+          <img src="https://bit.ly/4385w8D">
+          <h3>Villa</h3>
+          <p class="price">$750,000</p>
+         </div>
+      
+         <div class="photo-card" id="co-op">
+          <img src="https://www.homestratosphere.com/wp-content/uploads/2018/02/apartment-building-hs-870x621.jpg.webp">
+          <h3>Co-op</h3>
+          <p class="price">$1,256,000</p>
+         </div>
+      
+         <div class="photo-card" id="placeholder">
+          <img src="https://www.remotelands.com/travelogues/app/uploads/2018/04/Rambagh-Palace1.jpg">
+          <h3>Palace</h3>
+          <p class="price">$16,825,400</p>
+         </div>
+        </div>
+    </div>
+</div>
+<div class="display-houses">
+
+</div>
+
+
+
+
+
+<div id="form">
+<form action="" class="form">
+<div class="form-group">
+   <label for="">Name</label>
+   <input id="name" type="text" name="name" placeholder="Enter your full name">
+</div>
+<div class="form-group">
+   <label for="">Email</label>
+   <input id="email" type="text" name="Email" placeholder="Enter your current Email">
+</div>
+<div class="form-group">
+   <label for="">Phone number</label>
+   <input id="phone-number" type="text" name="phone-number" placeholder="Enter your phone number">
+</div>
+<div class="form-group">
+   <label for="">Type of house</label>
+   <select name="" id="house">
+       <option value=""></option>
+       <option value="">Single-Family Home</option>
+       <option value="">Townhouse</option>
+       <option value="">Multi-Family Home</option>
+       <option value="">Modular Home</option>
+       <option value="">Bungalow</option>
+       <option value="">Cottage</option>
+       <option value="">Mordern Farmhouse</option>
+       <option value="">Apartment</option>
+       <option value="">Mansion</option>
+       <option value="">Villa</option>
+   </select>
+</div>
+<div class="form-group">
+   <label for="">Number of rooms</label>
+   <select name="" id="rooms">
+       <option value=""></option>
+       <option value="1">1 Bedroom</option>
+       <option value="2">2 Bedroom</option>
+       <option value="3">3 Bedroom</option>
+       <option value="4">4 Bedroom</option>
+       <option value="5">5 Bedroom</option>
+   </select>
+</div>
+<div class="form-group">
+   <label for="">Enter budget</label>
+   <input id="budget" type="number" name="budget" placeholder="Enter your estimated budget">
+</div>
+<div class="form-group">
+   <label for="">Enter current date</label>
+   <input id="date" type="date" name="date" placeholder="Enter current date">
+</div>
+<div class="form-group">
+   <label for="">Enter house description</label>
+  <textarea name="" id="description" cols="30" rows="10" placeholder="Enter house description"></textarea>
+</div>
+<div class="form-button">
+   <button id="btn" type="submit">Book a house design</button>
+</div>
+<div>
+   <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!-- Add font awesome icons -->
 <a href="#" class="fa fa-facebook"></a>
 <a href="#" class="fa fa-twitter"></a>
 ...
-    </div>
+</div>
 
 </form>
 </div>
 </section>
-<footer>
-<div class="container">
-    <div class="row">
-      <div class="col-md-4 col-sm-6">
-        <h4>About Us</h4>
-        <p>We are a platform connecting architects to clients.</p>
-      </div>
-      <div class="col-md-4 col-sm-6">
-        <h4>Contact Us</h4>
-        <ul class="list-unstyled">
-          <li><i class="fa fa-phone"></i> +1 123-456-7890</li>
-          <li><i class="fa fa-envelope"></i> info@architectconnect.com</li>
-          <li><i class="fa fa-map-marker"></i> 123 Main Street, Anytown, USA</li>
-        </ul>
-      </div>
-      <div class="col-md-4 col-sm-12">
-        <h4>Follow Us</h4>
-        <ul class="list-unstyled">
-          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</footer>
 
-   
- 
-    
-  
-   
-   
 
-   <script src="./index.js"></script>
+
+
+
+
+
+
+
+<script src="./index.js"></script>
 
 </body>
 </html>
